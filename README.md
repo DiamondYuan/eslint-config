@@ -29,7 +29,7 @@ module.exports = {
 ### TypeScript
 
 ```bash
-npm install --save-dev eslint typescript @diamondyuan/eslint-config-typescript
+npm install --save-dev eslint babel-eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin @diamondyuan/eslint-config-typescript
 ```
 
 ```javascript

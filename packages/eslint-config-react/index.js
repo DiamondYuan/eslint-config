@@ -152,10 +152,10 @@ module.exports = {
     // handler 的名称必须是 onXXX 或 handleXXX
     // @off 没必要限制
     "react/jsx-handler-names": "off",
-    // @fixable jsx 的 children 缩进必须为四个空格
-    "react/jsx-indent": ["error", 4],
-    // @fixable jsx 的 props 缩进必须为四个空格
-    "react/jsx-indent-props": ["error", 4],
+    // @fixable jsx 的 children 缩进必须为两个空格
+    "react/jsx-indent": ["error", 2],
+    // @fixable jsx 的 props 缩进必须为两个空格
+    "react/jsx-indent-props": ["error", 2],
     // 数组中的 jsx 必须有 key
     "react/jsx-key": "error",
     // @fixable 限制每行的 props 数量

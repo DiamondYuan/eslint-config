@@ -406,6 +406,7 @@ module.exports = {
       {
         vars: "all",
         args: "none",
+        argsIgnorePattern: "^_",
         caughtErrors: "none",
         ignoreRestSiblings: true
       }

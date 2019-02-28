@@ -1,5 +1,5 @@
 {
-  "name": "@diamondyuan/eslint-react",
+  "name": "@diamondyuan/eslint-config-react",
   "version": "0.0.5",
   "main": "index.js",
   "license": "MIT",
@@ -7,6 +7,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@diamondyuan/eslint-javascript": "^0.0.5"
+    "@diamondyuan/eslint-config-javascript": "^0.0.5"
   }
 }

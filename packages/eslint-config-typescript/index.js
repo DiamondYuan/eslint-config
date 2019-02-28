@@ -9,7 +9,7 @@
  */
 
 module.exports = {
-  extends: ["@diamondyuan/eslint-javascript"],
+  extends: ["@diamondyuan/eslint-config-javascript"],
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
   rules: {

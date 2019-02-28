@@ -9,7 +9,7 @@
  */
 
 module.exports = {
-  extends: ["@diamondyuan/eslint-javascript"],
+  extends: ["@diamondyuan/eslint-config-javascript"],
   plugins: ["react"],
   rules: {
     // 布尔值类型的 propTypes 的 name 必须为 is 或 has 开头

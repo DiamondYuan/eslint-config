@@ -9,7 +9,10 @@
  */
 
 module.exports = {
-  extends: ["@diamondyuan/eslint-typescript", "@diamondyuan/eslint-react"],
+  extends: [
+    "@diamondyuan/eslint-config-typescript",
+    "@diamondyuan/eslint-config-react"
+  ],
   rules: {
     //
     //

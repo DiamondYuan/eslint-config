@@ -2,7 +2,7 @@
 
 在你的项目根目录下创建 .eslintrc.js，根据不同情况，将代码复制到文件中：
 
-### 标准规则
+### Javascript
 
 ```bash
 npm install --save-dev eslint babel-eslint @diamondyuan/eslint-config-javascript

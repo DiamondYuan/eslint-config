@@ -10,8 +10,8 @@
 
 module.exports = {
   extends: [
-    "@diamondyuan/eslint-config-typescript",
-    "@diamondyuan/eslint-config-react"
+    "@diamondyuan/eslint-config-react",
+    "@diamondyuan/eslint-config-typescript"
   ],
   rules: {
     //

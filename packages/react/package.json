@@ -1,12 +1,12 @@
 {
   "name": "@diamondyuan/eslint-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@diamondyuan/eslint-javascript": "^0.0.3"
+    "@diamondyuan/eslint-javascript": "^0.0.4"
   }
 }

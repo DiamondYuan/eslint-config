@@ -71,7 +71,7 @@ module.exports = {
     "@typescript-eslint/no-type-alias": "off",
     // 定义过的变量必须使用
     // eslint 原生的 no-unused-vars 无法使用，需要使用 @typescript-eslint/no-unused-vars
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { varsIgnorePattern: "^_" }],
     // 变量必须先定义后使用
     // @off eslint 原生已支持 no-use-before-define
     "@typescript-eslint/no-use-before-define": "off",

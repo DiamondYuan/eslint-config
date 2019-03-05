@@ -7,7 +7,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@diamondyuan/eslint-config-react": "^0.0.5",
-    "@diamondyuan/eslint-config-typescript": "^0.0.5"
+    "@diamondyuan/eslint-config-react": "^2.0.0",
+    "@diamondyuan/eslint-config-typescript": "^2.0.0"
   }
 }

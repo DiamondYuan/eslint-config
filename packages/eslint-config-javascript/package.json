@@ -1,6 +1,6 @@
 {
   "name": "@diamondyuan/eslint-config-javascript",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "main": "index.js",
   "license": "MIT",
   "gitHead": "620fad610d0c9937e2bacab51543cc49915ed145",

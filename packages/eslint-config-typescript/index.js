@@ -23,6 +23,16 @@ module.exports = {
     // 注释的斜线或 * 后必须有空格
     // @off 三斜线注释会报错
     "spaced-comment": "off",
+    /**
+     * @locale en-US
+     * @off note you must disable the base rule as it can report incorrect errors
+     */
+    /**
+     * @locale zh-Hans-CN
+     * @off 和 @typescript-eslint/indent 重复，报告错误不正确。
+     */
+    indent: "off",
+    "@typescript-eslint/indent": ["error", 2],
     //
     //
     // eslint-plugin-typescript 的规则

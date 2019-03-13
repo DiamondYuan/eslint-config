@@ -480,9 +480,19 @@ module.exports = {
     // @fixable 注释的首字母必须大写
     // @off 没必要限制
     "capitalized-comments": "off",
-    // @fixable 对象的最后一个属性末尾必须有逗号
-    // @off 没必要限制
-    "comma-dangle": "off",
+    /**
+     * @fixable true
+     */
+    "comma-dangle": [
+      "error",
+      {
+        arrays: "always-multiline",
+        objects: "always-multiline",
+        imports: "always-multiline",
+        exports: "always-multiline",
+        functions: "ignore"
+      }
+    ],
     // @fixable 逗号前禁止有空格，逗号后必须要有空格
     "comma-spacing": [
       "error",

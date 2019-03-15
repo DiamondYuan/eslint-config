@@ -400,15 +400,48 @@ module.exports = {
     "no-undef-init": "error",
     // 禁止对 undefined 重新赋值
     "no-undefined": "error",
-    // 定义过的变量必须使用
+    /**
+     * @locale zh-Hans-CN
+     * @description 定义过的变量必须使用。
+     */
     "no-unused-vars": [
       "error",
       {
+        /**
+         * @locale zh-Hans-CN
+         * @description 检查所有变量的使用情况，包括全局范围内的变量。
+         */
         vars: "all",
-        args: "none",
+        /**
+         * @locale zh-Hans-CN
+         * @description 忽略 _ 开头的参数。
+         */
+        varsIgnorePattern: "^_",
+        /**
+         * @locale zh-Hans-CN
+         * @description 必须使用所有命名的参数。
+         */
+        args: "all",
+        /**
+         * @locale zh-Hans-CN
+         * @description var { type, ...coords } = data; 忽略 type 点使用情况。
+         */
+        ignoreRestSiblings: true,
+        /**
+         * @locale zh-Hans-CN
+         * @description 忽略 _ 开头的变量。
+         */
         argsIgnorePattern: "^_",
-        caughtErrors: "none",
-        ignoreRestSiblings: true
+        /**
+         * @locale zh-Hans-CN
+         * @description error 必须被使用。
+         */
+        caughtErrors: "all",
+        /**
+         * @locale zh-Hans-CN
+         * @description 忽略_开头的 error。
+         */
+        caughtErrorsIgnorePattern: "^_"
       }
     ],
     // 变量必须先定义后使用

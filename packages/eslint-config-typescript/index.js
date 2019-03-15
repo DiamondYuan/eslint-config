@@ -13,6 +13,15 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
   rules: {
+    /**
+     * @locale en-US
+     * @off note you must disable the base rule as it can report incorrect errors
+     */
+    /**
+     * @locale zh-Hans-CN
+     * @off 和 @typescript-eslint/no-unused-vars 重复，报告错误不正确。
+     */
+    "no-unused-vars": "off",
     //
     //
     // 覆盖掉 ESLint 的规则
@@ -79,9 +88,53 @@ module.exports = {
     // 限制 type 的使用
     // @off 没必要限制
     "@typescript-eslint/no-type-alias": "off",
-    // 定义过的变量必须使用
-    // eslint 原生的 no-unused-vars 无法使用，需要使用 @typescript-eslint/no-unused-vars
-    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    /**
+     * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
+     */
+    /**
+     * @locale zh-Hans-CN
+     * @description  原生的 no-unused-vars 无法使用，需要使用 @typescript-eslint/no-unused-vars。
+     */
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        /**
+         * @locale zh-Hans-CN
+         * @description 检查所有变量的使用情况，包括全局范围内的变量。
+         */
+        vars: "all",
+        /**
+         * @locale zh-Hans-CN
+         * @description 忽略 _ 开头的参数。
+         */
+        varsIgnorePattern: "^_",
+        /**
+         * @locale zh-Hans-CN
+         * @description 必须使用所有命名的参数。
+         */
+        args: "all",
+        /**
+         * @locale zh-Hans-CN
+         * @description var { type, ...coords } = data; 忽略 type 点使用情况。
+         */
+        ignoreRestSiblings: true,
+        /**
+         * @locale zh-Hans-CN
+         * @description 忽略 _ 开头的变量。
+         */
+        argsIgnorePattern: "^_",
+        /**
+         * @locale zh-Hans-CN
+         * @description error 必须被使用。
+         */
+        caughtErrors: "all",
+        /**
+         * @locale zh-Hans-CN
+         * @description 忽略_开头的 error。
+         */
+        caughtErrorsIgnorePattern: "^_"
+      }
+    ],
     // 变量必须先定义后使用
     // @off eslint 原生已支持 no-use-before-define
     "@typescript-eslint/no-use-before-define": "off",

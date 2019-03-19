@@ -22,6 +22,16 @@ module.exports = {
      * @off 和 @typescript-eslint/no-unused-vars 重复，报告错误不正确。
      */
     "no-unused-vars": "off",
+    /**
+     * @locale zh-Hans-CN
+     * @off 和 @typescript-eslint/no-useless-constructor 冲突
+     */
+    "no-useless-constructor": "off",
+    /**
+     * @locale zh-Hans-CN
+     * @description 构造函数需要有逻辑
+     */
+    "@typescript-eslint/no-useless-constructor": "error",
     //
     //
     // 覆盖掉 ESLint 的规则

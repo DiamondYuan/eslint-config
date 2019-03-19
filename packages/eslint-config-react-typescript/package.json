@@ -1,6 +1,6 @@
 {
   "name": "@diamondyuan/eslint-config-react-typescript",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "@diamondyuan/eslint-config-react": "^4.0.0",
-    "@diamondyuan/eslint-config-typescript": "^4.0.0"
+    "@diamondyuan/eslint-config-typescript": "^4.0.1"
   }
 }

@@ -1,13 +1,13 @@
 {
   "name": "@diamondyuan/eslint-config-react-typescript",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@diamondyuan/eslint-config-react": "^5.0.0",
+    "@diamondyuan/eslint-config-react": "^5.0.1",
     "@diamondyuan/eslint-config-typescript": "^5.0.0"
   }
 }

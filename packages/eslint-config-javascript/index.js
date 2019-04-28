@@ -850,9 +850,24 @@ module.exports = {
     // ECMAScript 6
     // 这些规则与 ES6（即通常所说的 ES2015）有关
     //
-    // @fixable 箭头函数能够省略 return 的时候，必须省略，比如必须写成 () => 0，禁止写成 () => { return 0 }
-    // @off 箭头函数的返回值，应该允许灵活设置
-    'arrow-body-style': 'off',
+    /**
+     * @locale zh-Hans-CN
+     * @description 当大括号是可以省略的，强制不使用它们 (默认)
+     */
+    'arrow-body-style': [
+      'error',
+      'as-needed',
+      {
+        /**
+         * @off
+         */
+        /**
+         * @locale zh-Hans-CN
+         * @description 对象字面量需要使用 return
+         */
+        requireReturnForObjectLiteral: false,
+      },
+    ],
     // @fixable 箭头函数只有一个参数的时候，必须加括号
     // @off 应该允许灵活设置
     'arrow-parens': 'off',
@@ -927,7 +942,11 @@ module.exports = {
     'prefer-spread': 'off',
     // @fixable 必须使用模版字符串而不是字符串连接
     // @off 字符串连接很常用
-    'prefer-template': 'off',
+    /**
+     * @locale zh-Hans-CN
+     * @description 建议使用模板而非字符串连接
+     */
+    'prefer-template': 'error',
     // generator 函数内必须有 yield
     'require-yield': 'error',
     // @fixable ... 的后面禁止有空格

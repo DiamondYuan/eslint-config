@@ -1,12 +1,12 @@
 {
   "name": "@diamondyuan/eslint-config-typescript",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@diamondyuan/eslint-config-javascript": "^5.0.0"
+    "@diamondyuan/eslint-config-javascript": "^6.0.0"
   }
 }

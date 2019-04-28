@@ -95,9 +95,11 @@ module.exports = {
     // 组件必须写 propTypes
     // @off 不强制要求写 propTypes
     'react/prop-types': 'off',
-    // 出现 jsx 的地方必须 import React
-    // @off 已经在 no-undef 中限制了
-    'react/react-in-jsx-scope': 'off',
+    /**
+     * @locale zh-Hans-CN
+     * @description 出现 jsx 的地方必须 import React
+     */
+    'react/react-in-jsx-scope': 'error',
     // 非 required 的 prop 必须有 defaultProps
     // @off 不强制要求写 propTypes
     'react/require-default-props': 'off',

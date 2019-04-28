@@ -167,14 +167,18 @@ module.exports = {
     'consistent-return': 'off',
     // @fixable if 后面必须要有 {，除非是单行 if
     curly: ['error', 'multi-line', 'consistent'],
-    // switch 语句必须有 default
-    // @off 太严格了
-    'default-case': 'off',
+    /**
+     * @locale zh-Hans-CN
+     * @description switch 语句必须有 default
+     */
+    'default-case': ['error', { commentPattern: '^no default$' }],
     // @fixable 链式调用的时候，点号必须放在第二行开头处，禁止放在第一行结尾处
     'dot-location': ['error', 'property'],
-    // @fixable 禁止出现 foo['bar']，必须写成 foo.bar
-    // @off 当需要写一系列属性的时候，可以更统一
-    'dot-notation': 'off',
+    /**
+     * @locale zh-Hans-CN
+     * @description 禁止出现 foo['bar']，必须写成 foo.bar
+     */
+    'dot-notation': ['error', { allowKeywords: true }],
     // @fixable 必须使用 === 或 !==，禁止使用 == 或 !=，与 null 比较时除外
     eqeqeq: [
       'error',
@@ -195,9 +199,11 @@ module.exports = {
     // 禁止在正则表达式中出现形似除法操作符的开头，如 let a = /=foo/
     // @off 有代码高亮的话，在阅读这种代码时，也完全不会产生歧义或理解上的困难
     'no-div-regex': 'off',
-    // @fixable 禁止在 else 内使用 return，必须改为提前结束
-    // @off else 中使用 return 可以使代码结构更清晰
-    'no-else-return': 'off',
+    /**
+     * @locale zh-Hans-CN
+     * @description 禁止在 else 内使用 return，必须改为提前结束
+     */
+    'no-else-return': ['error', { allowElseIf: false }],
     // 不允许有空函数，除非是将一个空函数设置为某个项的默认值
     'no-empty-function': [
       'error',

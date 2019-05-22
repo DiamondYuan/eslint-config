@@ -2,6 +2,19 @@
 
 在你的项目根目录下创建 .eslintrc.js，根据不同情况，将代码复制到文件中：
 
+## prettier 配置
+
+创建 `.prettierrc` 文件
+
+```json
+{
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "proseWrap": "never"
+}
+```
+
 ## Javascript
 
 ```bash

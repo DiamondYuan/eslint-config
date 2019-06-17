@@ -10,7 +10,7 @@
 
 module.exports = {
   extends: ['@diamondyuan/eslint-config-javascript'],
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   settings: {
     react: {
       version: 'detect',
@@ -204,5 +204,7 @@ module.exports = {
     // @fixable 多行的 jsx 必须有括号包起来
     // @off 没必要限制
     'react/jsx-wrap-multilines': 'off',
+    'react-hooks/rules-of-hooks': 'error', // 检查 Hook 的规则
+    'react-hooks/exhaustive-deps': 'error', // 检查 effect 的依赖
   },
 };

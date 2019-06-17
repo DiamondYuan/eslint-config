@@ -50,7 +50,7 @@ module.exports = {
 ## React
 
 ```bash
-npm install --save-dev eslint babel-eslint eslint-plugin-react @diamondyuan/eslint-config-react
+npm install --save-dev eslint babel-eslint eslint-plugin-react eslint-plugin-react-hooks @diamondyuan/eslint-config-react
 ```
 
 ```javascript
@@ -118,7 +118,7 @@ module.exports = {
 ## React TypeScript
 
 ```bash
-npm install --save-dev eslint typescript babel-eslint eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin @diamondyuan/eslint-config-react-typescript
+npm install --save-dev eslint typescript babel-eslint eslint-plugin-react eslint-plugin-react-hooks @typescript-eslint/parser @typescript-eslint/eslint-plugin @diamondyuan/eslint-config-react-typescript
 ```
 
 ```javascript

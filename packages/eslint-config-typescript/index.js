@@ -27,6 +27,15 @@ module.exports = {
      * @off 和 @typescript-eslint/no-useless-constructor 冲突
      */
     'no-useless-constructor': 'off',
+
+    /**
+     * @locale zh-Hans-CN
+     * @off 和 @typescript-eslint/no-empty-function 冲突
+     */
+    'no-empty-function': 'off',
+
+    '@typescript-eslint/no-empty-function': 'error',
+
     /**
      * @locale zh-Hans-CN
      * @description 构造函数需要有逻辑

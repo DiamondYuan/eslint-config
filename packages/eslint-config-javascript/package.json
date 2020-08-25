@@ -5,6 +5,7 @@
   "license": "MIT",
   "gitHead": "620fad610d0c9937e2bacab51543cc49915ed145",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

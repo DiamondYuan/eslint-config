@@ -1,16 +1,16 @@
 {
   "name": "@diamondyuan/eslint",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@diamondyuan/eslint-config-javascript": "^7.0.0",
-    "@diamondyuan/eslint-config-react": "^7.0.0",
-    "@diamondyuan/eslint-config-react-typescript": "^7.0.1",
-    "@diamondyuan/eslint-config-typescript": "^7.0.1",
+    "@diamondyuan/eslint-config-javascript": "^7.0.2",
+    "@diamondyuan/eslint-config-react": "^7.0.2",
+    "@diamondyuan/eslint-config-react-typescript": "^7.0.2",
+    "@diamondyuan/eslint-config-typescript": "^7.0.2",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
     "babel-eslint": "^10.1.0",

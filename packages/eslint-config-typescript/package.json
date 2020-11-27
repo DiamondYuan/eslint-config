@@ -1,6 +1,6 @@
 {
   "name": "@diamondyuan/eslint-config-typescript",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -8,6 +8,6 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@diamondyuan/eslint-config-javascript": "^7.0.0"
+    "@diamondyuan/eslint-config-javascript": "^7.0.2"
   }
 }

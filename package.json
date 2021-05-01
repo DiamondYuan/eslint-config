@@ -6,11 +6,11 @@
     "lint": "eslint --ext .js ."
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "commitizen": "^3.0.7",
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.15.3",
-    "lerna": "^3.15.0"
+    "eslint": "^7.25.0",
+    "lerna": "^4.0.0"
   },
   "config": {
     "commitizen": {

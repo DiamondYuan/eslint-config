@@ -68,8 +68,6 @@ module.exports = {
     // 函数有重载时，必须将重载成员分组在一起
     // @off 该规则现在有 bug https://github.com/AlloyTeam/eslint-config-alloy/issues/38
     '@typescript-eslint/adjacent-overload-signatures': 'off',
-    // 类和接口的命名必须遵守帕斯卡命名法，比如 PersianCat
-    '@typescript-eslint/class-name-casing': 'error',
     // 必须手动指定类的属性和方法的可访问性（private 或 public）
     // @off 太严格了
     '@typescript-eslint/explicit-member-accessibility': 'off',
